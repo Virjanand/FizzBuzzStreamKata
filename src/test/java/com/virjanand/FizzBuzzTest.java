@@ -11,6 +11,6 @@ public class FizzBuzzTest {
     @Test
     public void number_givesListOfIntegersUpToNumber() {
         FizzBuzz fizzBuzz = new FizzBuzz();
-        assertEquals(asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15), fizzBuzz.getNumbers(15));
+        assertEquals(asList("1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"), fizzBuzz.getNumbers(15));
     }
 }
