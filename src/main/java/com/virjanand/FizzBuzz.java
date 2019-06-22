@@ -5,9 +5,9 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 public class FizzBuzz {
-    public List<Integer> getNumbers(int maxNumber) {
+    public List<String> getNumbers(int maxNumber) {
         return IntStream.rangeClosed(1, maxNumber)
-                .boxed()
+                .mapToObj(String::valueOf)
                 .collect(Collectors.toList());
     }
 }
