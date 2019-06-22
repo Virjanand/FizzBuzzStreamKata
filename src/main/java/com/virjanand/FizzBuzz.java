@@ -7,7 +7,7 @@ import java.util.stream.IntStream;
 public class FizzBuzz {
     public List<Integer> getNumbers(int i) {
         return IntStream.rangeClosed(1, i)
-                .mapToObj(Integer::valueOf)
+                .boxed()
                 .collect(Collectors.toList());
     }
 }
